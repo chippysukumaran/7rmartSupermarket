@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="10" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-19T17:29:46 CEST" name="groupping" finished-at="2026-06-19T17:30:16 CEST" duration-ms="29757">
+    <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyUserLoginWithValidUserNameAndValidPassword()[pri:0, instance:testscript.LoginTest@327514f]" name="verifyUserLoginWithValidUserNameAndValidPassword" class="testscript.LoginTest"/>
+        <method signature="LogoutTest.verifysuccessfulLogout()[pri:0, instance:testscript.LogoutTest@4b2bac3f]" name="verifysuccessfulLogout" class="testscript.LogoutTest"/>
+      </group> <!-- regression -->
+    </groups>
+    <test started-at="2026-06-19T17:29:46 CEST" name="FireFoxTest" finished-at="2026-06-19T17:30:16 CEST" duration-ms="29757">
+      <class name="testscript.LogoutTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@4b2bac3f]" started-at="2026-06-19T17:30:02 CEST" name="browserInitialization" finished-at="2026-06-19T17:30:12 CEST" duration-ms="9563" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifysuccessfulLogout()[pri:0, instance:testscript.LogoutTest@4b2bac3f]" started-at="2026-06-19T17:30:12 CEST" name="verifysuccessfulLogout" description="Verification of Logout Functionality" finished-at="2026-06-19T17:30:14 CEST" duration-ms="2441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysuccessfulLogout -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@4b2bac3f]" started-at="2026-06-19T17:30:14 CEST" name="browserQuit" finished-at="2026-06-19T17:30:16 CEST" duration-ms="1589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifysuccessfulLogout status=SUCCESS method=LogoutTest.verifysuccessfulLogout()[pri:0, instance:testscript.LogoutTest@4b2bac3f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.LogoutTest -->
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@327514f]" started-at="2026-06-19T17:29:46 CEST" name="browserInitialization" finished-at="2026-06-19T17:29:58 CEST" duration-ms="11963" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitialization -->
+        <test-method signature="verifyUserLoginWithValidUserNameAndValidPassword()[pri:0, instance:testscript.LoginTest@327514f]" started-at="2026-06-19T17:29:58 CEST" name="verifyUserLoginWithValidUserNameAndValidPassword" description="Verification Login Page Functionality with correct Username and Password" finished-at="2026-06-19T17:30:01 CEST" duration-ms="2794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserLoginWithValidUserNameAndValidPassword -->
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@327514f]" started-at="2026-06-19T17:30:01 CEST" name="browserQuit" finished-at="2026-06-19T17:30:02 CEST" duration-ms="1277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyUserLoginWithValidUserNameAndValidPassword status=SUCCESS method=LoginTest.verifyUserLoginWithValidUserNameAndValidPassword()[pri:0, instance:testscript.LoginTest@327514f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserQuit -->
+      </class> <!-- testscript.LoginTest -->
+    </test> <!-- FireFoxTest -->
+  </suite> <!-- groupping -->
+</testng-results>

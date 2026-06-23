@@ -24,7 +24,7 @@ public class Base {
 	public Properties properties;
 	public FileInputStream fileinput;
 @Parameters("browser")
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	public void browserInitialization(String browser) throws Exception {
 	
 	if(browser.equalsIgnoreCase("Edge"))
@@ -49,19 +49,21 @@ public class Base {
 			System.out.println(e);
 		}
 
-		driver = new FirefoxDriver();// To Launch the Chrome driver
+		
 		// driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 		driver.get(properties.getProperty("url"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WaitUtility.IMPLICITWAIT));
 		driver.manage().window().maximize(); // To maximize the screen
 	}
 
-	 @AfterMethod
+	 @AfterMethod(alwaysRun=true)
 	public void browserQuit(ITestResult iTestResult) throws IOException {
 		if (iTestResult.getStatus() == ITestResult.FAILURE) {
 			ScreenshotUtility scrShot = new ScreenshotUtility(); // creating obj
 			scrShot.getScreenShot(driver, iTestResult.getName());
+			
 		}
+		driver.quit();
 	}
 }
 

@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class LoginTest extends Base {
 
-	@Test(description = "Verification Login Page Functionality with correct Username and Password")
+	@Test(description = "Verification Login Page Functionality with correct Username and Password",groups= {"regression"})
 
 	public void verifyUserLoginWithValidUserNameAndValidPassword() throws IOException {
 		// String username="admin";
